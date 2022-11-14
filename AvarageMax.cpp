@@ -3,7 +3,8 @@
 using namespace std;
 
 int main() {
-	int sum = 0; int n; int x; int max = 0;
+	
+	int sum = 0; int n; int x;
 	do {
 		cout << "Inserisci i numeri desiderati: ";
 		cin >> n;
@@ -12,6 +13,7 @@ int main() {
 	int arr[n];
 	
 	for(int i = 0; i < n; i++) {
+		cout << "Digita il " << i + 1 << " numero: ";
 		cin >> x;
 		sum += x;
 		
@@ -22,10 +24,8 @@ int main() {
 	
 	for(int a = 0; a < n; a++) {
 		if(arr[a] > avarage) {
-			max = arr[a];
+			cout << "Massimo: " << arr[a];
 		}
 	}
-	
-	cout << "Massimo: " << max;
 	return 0;
 }
